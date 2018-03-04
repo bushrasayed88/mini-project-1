@@ -1,0 +1,74 @@
+#include<stdio.h>
+int main()
+{
+	int units;
+	float amount;
+	
+	printf("\t\tWELCOME TO ELECTRICITY BOARD DEPARTMENT");
+
+	printf("\n\t......................................................................\n");
+	printf("\nupto 20 units...................................=rs.3/unit");
+	printf("\n21 to 30 units..................................=rs.7/unit");
+	printf("\n31 to 50 units..................................=rs.8.5/unit");
+	printf("\n51 to 150 units.................................=rs.10/unit");
+	printf("\n151 to 250 units................................=rs.11/unit");
+	printf("\n251 to 400 units................................=rs.12/unit");
+	printf("\n400+ units......................................=rs.13/unit");
+	printf("\n.........................................................................");
+	printf("\n\nPlease enter your total units consumed : ");
+	scanf("%d",&units);
+	if(units<=20)
+{
+	amount=units*3;
+	
+	}
+	else if((units>=21)||(units<=30))	
+	{
+		amount=units*7;
+	}
+	else if((units>31)||(units<50))
+	{
+		amount=units*8.5;
+	}
+	else if((units>=51)||(units<=150))
+	{
+		amount=units*10;
+}
+else if((units>=151)||(units<=250))
+{
+	amount=units*11;
+}
+else if((units>=251)||(units<=400))
+{
+	amount=units*12;
+	
+}
+else
+{
+
+amount=units*13;
+}
+	
+	
+printf("\nYour Bill Amount : %3.2f",amount);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
